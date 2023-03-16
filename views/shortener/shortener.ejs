@@ -1,0 +1,40 @@
+<%-include('../includes/head.ejs')%>
+<% if(hasError){ %>
+    <div class="container">
+      <h1 class="mt-5" style="text-align: center;">Your short URL</h1>
+      <div class="card mt-5">
+        <div class="card-header">
+          Error!
+        </div>
+        <div class="card-body">
+          <div class="alert alert-danger" role="alert">
+            <%=error%>
+          </div>
+          <a href="/" class="btn btn-success">Back</a>
+        </div>
+      </div>
+    </div>
+    <%}else{%>
+      <div class="container">
+        <h1 class="mt-5" style="text-align: center;">Your short URL</h1>
+        <div class="card mt-5">
+          <div class="card-header">
+            New URL
+          </div>
+          <div class="card-body">
+            <div class="mb-3">
+              <label for="urlLink">URL</label>
+              <input type="text" class="form-control" id="urlLink" value="<%=url%>">
+            </div>
+            <button id="copyButton" class="btn btn-primary">Copy</button>
+            <p>Long URL: <a href="<%=longUrl%>">
+                <%=longUrl%>
+              </a></p>
+              <a href="/" class="btn btn-success">Create other</a>
+          </div>
+        </div>
+      </div>
+      <script src="js/script.js"></script>
+      <%}%>
+        </body>
+        </html>
