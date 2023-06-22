@@ -1,1 +1,1 @@
-This is a url shortener web project. You can short your url and use your short url in this project. I used body-parser, express-validator(for server side validation), mongoose(as MongoDB ORM), shortid(for genereting short unique id) and so on.
+This is an url shortener web project. You can short your url and use your short url in this project. I used body-parser, express-validator(for server side validation), mongoose(as a MongoDB ORM), shortid(for genereting short and unique id) and so on.
